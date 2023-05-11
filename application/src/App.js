@@ -2,10 +2,24 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  let nombre="duban";
+  let auth=false;
+  let arreglo=["Primavera","Verano","Otoño"];
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+
+        <label htmlFor="nombre">Nombre</label>
+        <input type="text" id="nombre"/>
+        <p>{auth?"el usuario esta logueado":"el usurio no esta logueado"}</p>
+        <p>{2+1}</p>
+        
+        <ul>
+          {arreglo.map((e,index)=>(
+          <li key={index}>{e}</li>
+        ))}</ul>
+
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -18,6 +32,7 @@ function App() {
           Learn React
         </a>
       </header>
+
     </div>
   );
 }
