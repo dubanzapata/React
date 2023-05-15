@@ -1,10 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Componente from './components/Componente';
 function App() {
   let nombre="duban";
   let auth=false;
   let arreglo=["Primavera","Verano","Otoño"];
+
   return (
     <div className="App">
       <header className="App-header">
@@ -32,8 +33,11 @@ function App() {
           Learn React
         </a>
       </header>
+      <section>
+        <Componente msg="hola soy un componente de clase"/>
+      </section>
 
-    </div>
+    </div> 
   );
 }
 
