@@ -1,11 +1,9 @@
 import React, {Component} from "react"
 
-class Componente extends Component {
+function Componente (props)  {
 
-    render(){
-
-        return <h1>{this.props.msg}</h1>
-    }
+        return <h1>{props.msg}</h1>
+    
 
 
 }

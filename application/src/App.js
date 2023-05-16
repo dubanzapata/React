@@ -34,7 +34,7 @@ function App() {
         </a>
       </header>
       <section>
-        <Componente msg="hola soy un componente de clase"/>
+        <Componente msg="hola soy un componente funcional"/>
       </section>
 
     </div> 
