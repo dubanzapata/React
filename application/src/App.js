@@ -27,7 +27,10 @@ function App() {
         <section>
         <Componente msg="hola soy un componente funcional expresado"/>
         <hr/>
-        <Propiedades></Propiedades>
+        <Propiedades cadena="esto es una cadena de texto" numero={10} booleano={true} 
+        arreglo={[1,2,3]}  objeto={{nombre:"duban",edad:34,estudiante:true}}
+        elementoReact={<li>"elemento JSX" </li>} funcion={(num)=>num*num}
+        componenteReact={<Componente msg="componente mediante una props"/>}/>
       </section>  
      
       </header>
