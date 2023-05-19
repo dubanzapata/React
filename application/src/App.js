@@ -26,7 +26,7 @@ function App() {
         </section>
 
         <section>
-        <Componente msg="hola soy un componente funcional expresado"/>
+        <Componente msg="hola soy un componente funcional declarativo"/>
         <hr/>
         <Propiedades cadena="esto es una cadena de texto" numero={10} booleano={true} 
         arreglo={[1,2,3]}  objeto={{nombre:"duban",edad:34,estudiante:true}}
