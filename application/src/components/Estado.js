@@ -1,5 +1,14 @@
 import { Component } from "react";
 
+function EstadoAhijo (props) {
+
+    return (<div>
+        <h3>{props.contadorHijo}</h3>
+    </div>
+    );
+
+}
+
 export default class Estado extends Component {
     constructor (props){
         super(props);
@@ -23,6 +32,7 @@ export default class Estado extends Component {
         <div>
             <h1>{this.state.Title}</h1>
             <p>{this.state.contador}</p>
+            <EstadoAhijo contadorHijo={this.state.contador}/>
 
         </div>
         
