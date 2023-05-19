@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Componente from './components/Componente';
 import Propiedades from './components/Propiedades';
+import Estado from './components/Estado';
 function App() {
   
   return (
@@ -31,7 +32,9 @@ function App() {
         arreglo={[1,2,3]}  objeto={{nombre:"duban",edad:34,estudiante:true}}
         elementoReact={<li>"elemento JSX" </li>} funcion={(num)=>num*num}
         componenteReact={<Componente msg="componente mediante una props"/>}/>
-      </section>  
+      </section>
+      <hr/>
+      <Estado></Estado>  
      
       </header>
     </div> 
