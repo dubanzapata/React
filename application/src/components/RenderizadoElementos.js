@@ -4,7 +4,8 @@ import data from "../helpers/data.json"
 function elementoLista(props){
     return (
         <li>
-            <a href={props.el.web}>frameworks</a>
+            <a href={props.el.web} target="_blank">{props.el.name}
+            </a>
         </li>
     )
 }
@@ -39,7 +40,7 @@ export default class RenderizadoElementos extends Component {
                 </ol>
                 <h3>Frameworks Frontend javascript</h3 >
                 <ul>
-                {data.frameworks.map((el,index)=>(<elementoLista key={index} el={el}></elementoLista>))}
+                {data.frameworks.map((el,index)=>(<elementoLista key={index} el={el}/>))}
                 </ul>
                 
             
